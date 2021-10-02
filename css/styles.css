@@ -201,3 +201,17 @@ textarea {
   color: #fc5d35 !important;
 }
 
+#contact-section{
+  background-image: url(../vector/vector2-freep/5889672.svg );
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  overflow: visible;
+  background-color: white;
+}
+.input .textarea{
+  background-color: hsla(216, 100, 100, 0.1) !important;
+}
+
+
