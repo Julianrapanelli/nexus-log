@@ -12,7 +12,7 @@
   color: black !important;
 }
 .has-bg-img { 
-  background-image: url(../images/jake-nebov-OPjxGV7ubsY-unsplash.jpg) ;
+  background-image: url(../images/hero.jpg) ;
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
@@ -200,7 +200,9 @@ textarea {
   background-color: white !important;
   color: #fc5d35 !important;
 }
-
+label{
+  text-align: left;
+}
 #contact-section{
   background-image: url(../vector/vector2-freep/5889672.svg );
   background-position: right;
