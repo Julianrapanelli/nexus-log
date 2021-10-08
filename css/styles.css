@@ -101,7 +101,37 @@
 }
 
 /* COLORES SERVICIOS */
-
+.services-container{
+  min-height: 40vh !important;
+  max-height: 40vh !important;
+  margin: 2rem 1rem;
+  max-width: 80vw !important;
+}
+.services-col{
+  min-height: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.services-text{
+  min-height: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 1.2rem;
+}
+.services-img{
+  min-height: 100% !important;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover;
+}
+@media (max-width:480px) {
+  .services-col{
+    display:none !important;
+  }
+}
 .azul{
   background-color: #26A9E0;
   margin-bottom: 2rem;
