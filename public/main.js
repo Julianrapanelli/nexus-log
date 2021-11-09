@@ -45,6 +45,8 @@ var config = {
   
   projectId: "nexus-logistic-solutions",
   
+  databaseURL: "https://nexus-logistic-solutions-default-rtdb.firebaseio.com/",
+
   storageBucket: "nexus-logistic-solutions.appspot.com",
   
   messagingSenderId: "306978922089",
