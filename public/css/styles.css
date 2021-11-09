@@ -93,8 +93,8 @@ body{
   color: #4a4a4a !important;
 }
 .services-container{
-  min-height: 40vh !important;
-  max-height: 50vh !important;
+/*   min-height: 60vh !important;*/
+  max-height: 90vh !important; 
   margin: 2rem 1rem;
   max-width: 80vw !important;
 }

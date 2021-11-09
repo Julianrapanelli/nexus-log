@@ -36,29 +36,63 @@ window.onscroll = function() {
 
 //formulario de contacto
 
-// referencia a la colección mensajes de firebase
+// Initialize Firebase (ADD YOUR OWN DATA)
+var config = {
+      
+  apiKey: "AIzaSyCmEpPQ0oe-VChsxtzI63svfEmFLp-ndDw",
+  
+  authDomain: "nexus-logistic-solutions.firebaseapp.com",
+  
+  projectId: "nexus-logistic-solutions",
+  
+  storageBucket: "nexus-logistic-solutions.appspot.com",
+  
+  messagingSenderId: "306978922089",
+  
+  appId: "1:306978922089:web:a1a3b7a0b698bb1bb08cf8",
+  
+  measurementId: "G-TPQ4WXZTG7"
+  
+};
+firebase.i
+firebase.initializeApp(config);
+
+// Reference messages collection
 var messagesRef = firebase.database().ref('messages');
 
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-document.getElementById("contactForm").addEventListener("submit", submitForm);
-
+// Submit form
 function submitForm(e){
   e.preventDefault();
-  
-  //get values
+
+  // Get values
   var name = getInputVal('name');
   var email = getInputVal('email');
   var message = getInputVal('message');
 
-  //guardar mensaje
+  // Save message
   saveMessage(name, email, message);
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+
+  // Clear form
+  document.getElementById('contactForm').reset();
 }
 
-//función para sacar los valores del form
+// Function to get get form values
 function getInputVal(id){
   return document.getElementById(id).value;
 }
-//función para guardar el mensaje para firebase
+
+// Save message to firebase
 function saveMessage(name, email, message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
