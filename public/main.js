@@ -33,3 +33,37 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 } 
+
+//formulario de contacto
+
+// referencia a la colección mensajes de firebase
+var messagesRef = firebase.database().ref('messages');
+
+
+document.getElementById("contactForm").addEventListener("submit", submitForm);
+
+function submitForm(e){
+  e.preventDefault();
+  
+  //get values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var message = getInputVal('message');
+
+  //guardar mensaje
+  saveMessage(name, email, message);
+}
+
+//función para sacar los valores del form
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+//función para guardar el mensaje para firebase
+function saveMessage(name, email, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+    message: message
+  });
+}

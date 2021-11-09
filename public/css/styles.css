@@ -94,7 +94,7 @@ body{
 }
 .services-container{
   min-height: 40vh !important;
-  max-height: 40vh !important;
+  max-height: 50vh !important;
   margin: 2rem 1rem;
   max-width: 80vw !important;
 }
@@ -109,6 +109,10 @@ body{
   max-height: 100% !important;
   margin: 0 !important;
   padding: 1.2rem;
+  color: #031117 !important;
+}
+.text-color-black{
+  color: #031117 !important;
 }
 .services-img{
   min-height: 100% !important;

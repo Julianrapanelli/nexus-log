@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nexus Logistics Solutions</title>
+  <title>Nexus Logistic Solutions</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
@@ -137,7 +137,7 @@
     <div class="container">
       <h2 class="title is-1">Who we are</h2>
       <div class="container">
-        <h3 class="is-size-4 has-text-left">I'm Ignacio Giordano, co-founder of <strong>NEXUS</strong> Logistics
+        <h3 class="is-size-4 has-text-left">I'm Ignacio Giordano, co-founder of <strong>NEXUS</strong> Logistic
           Solutions.</h3>
         <p class="column is-four-fifths has-text-left is-size-5">
           I decided to set up this company after working <span class="underlined">more than 13 years in the Shipping
@@ -178,7 +178,7 @@
     <!-- SERVICIOS 1 -->
     <div class="columns is-flex is-justify-content-left services-container">
       <div class="column is-half is-flex is-flex-direction-column azul services-text">
-        <h3 class="title is-3">Spare parts: repair and purchase</h3>
+        <h3 class="title is-3 text-color-black">Spare parts: repair and purchase</h3>
         <p class="hast-text-centered">
           To keep everything on the move, we have specialized technicians, workshops and suppliers to meet your needs.
           We know how much it is necessary to trust the quality of spare parts and tools that are used on board, which
@@ -198,7 +198,7 @@
         <img src="images/bond-store.jpg" class="services-img" alt="">
       </div>
       <div class="column is-half is-flex is-flex-direction-column celeste services-text">
-        <h3 class="title is-3">Fresh provisions and bonded store</h3>
+        <h3 class="title is-3 text-color-black">Fresh provisions and bonded store</h3>
         <p class="hast-text-centered">
           Top quality at reasonable prices for anything that your crew needs on their voyage.
           <br>
@@ -213,7 +213,7 @@
     <!-- SERVICIOS 3 -->
     <div class="columns is-flex is-justify-content-left services-container">
       <div class="column is-half is-flex is-flex-direction-column verdecito services-text">
-        <h3 class="title is-3">Nautical Charts, publications & flags</h3>
+        <h3 class="title is-3 text-color-black">Nautical Charts, publications & flags</h3>
         <p class="hast-text-centered">
           but the majority have suffered alteration in some form, by injected humour, or
           randomised words which don't look even slightly believable.
@@ -227,13 +227,13 @@
     <!-- SERVICIOS 4 -->
     <div class="columns is-flex is-justify-content-right services-container">
       <div class="column is-half is-flex is-justify-content-right services-col">
-        <img src="images/nautical-charts.jpg" class="services-img" alt="">
+        <img src="images/Chemicals2.png" class="services-img" alt="">
       </div>
       <div class="column is-half is-flex is-flex-direction-column naranja services-text">
-        <h3 class="title is-3">Chemicals, marine paint and gases</h3>
+        <h3 class="title is-3 text-color-black">Chemicals, marine paint and gases</h3>
         <p class="hast-text-centered">
-          but the majority have suffered alteration in some form, by injected humour, or
-          randomised words which don't look even slightly believable.
+          We offer the most comprehensive marine chemicals and gases available by 
+          combining reliable services and competitive pricing with a global support network.
         </p>
         <br />
       </div>
@@ -242,10 +242,12 @@
     <!-- SERVICIOS 5 -->
     <div class="columns is-flex is-justify-content-left services-container">
       <div class="column is-half is-flex is-flex-direction-column rojo services-text">
-        <h3 class="title is-3">Lifeboat/raft inspection, among others</h3>
+        <h3 class="title is-3 text-color-black">Lifeboat/raft inspection, among others</h3>
         <p class="hast-text-centered">
-          but the majority have suffered alteration in some form, by injected humour, or
-          randomised words which don't look even slightly believable.
+          Regular lifeboat inspection and maintenance will ensure your equipment 
+          remains in a state of readiness. <br>
+          We provide certified technicians authorised to carry out periodic inspection 
+          and testing of lifeboats and rafts to ensure the safety of the crew during service.
         </p>
         <br />
       </div>
@@ -260,30 +262,30 @@
     <div class="container columns is-flex is-justify-content-left">
       <div class="column is-half has-text-centered">
         <h2 class="title is-2">Contact Us</h2>
-        <form>
+        <form id="contactForm">
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Name" required>
+              <input class="input" type="text" placeholder="Name" required id="name">
             </div>
           </div>
 
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input class="input" type="email" placeholder="Email" value="hello@" required>
+              <input class="input" type="email" placeholder="Email" value="hello@" required id="email">
             </div>
 
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Message" required></textarea>
+                <textarea class="textarea" placeholder="Message" required id="message"></textarea>
               </div>
             </div>
 
             <div class="field is-grouped">
               <div class="control">
-                <button class="button is-link">Send!</button>
+                <button type="submit" class="button is-link">Send!</button>
               </div>
             </div>
         </form>
@@ -295,12 +297,58 @@
   <footer class="footer-secondary">
     <div class="content has-text-centered">
       <p>
-        Copyright © 2021 Nexus Logistics Solutions, all rights reserved.
+        Copyright © 2021 Nexus Logistic Solutions, all rights reserved.
       </p>
     </div>
   </footer>
   </section>
-  <script src="main.js"></script>
+  
+  <!-- firebase -->
+  <script type="module">
+    
+    // Import the functions you need from the SDKs you need
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+  
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+  
+    // TODO: Add SDKs for Firebase products that you want to use
+    
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    
+    // Your web app's Firebase configuration
+    
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    
+    const firebaseConfig = {
+      
+      apiKey: "AIzaSyCmEpPQ0oe-VChsxtzI63svfEmFLp-ndDw",
+      
+      authDomain: "nexus-logistic-solutions.firebaseapp.com",
+      
+      projectId: "nexus-logistic-solutions",
+      
+      storageBucket: "nexus-logistic-solutions.appspot.com",
+      
+      messagingSenderId: "306978922089",
+      
+      appId: "1:306978922089:web:a1a3b7a0b698bb1bb08cf8",
+      
+      measurementId: "G-TPQ4WXZTG7"
+      
+    };
+    
+    
+    // Initialize Firebase
+    
+    const app = initializeApp(firebaseConfig);
+    
+    const analytics = getAnalytics(app);
+    
+    </script>
+
+<script src="main.js"></script>
 
 </body>
 
