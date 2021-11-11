@@ -27,7 +27,7 @@ body{
   background-color: #031117;
 }
 .is-white{
-  color:rgb(202, 202, 202);
+  color:rgb(223, 221, 221);
   font-weight: 700;
 }
 
@@ -242,5 +242,58 @@ label{
 .input .textarea{
   background-color: hsla(216, 100, 100, 0.1) !important;
 }
+/* THANK YOU PAGE */
 
+#thank-you-bg{
+  background-image: url(../vector/vector3-vect/shipyard.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
 
+.black-shadow{
+  background: linear-gradient(
+    to right,
+    hsla(0, 0%, 5%, 0.91) 0%,
+    hsla(0, 0%, 5%, 0.897) 9.8%,
+    hsla(0, 0%, 5%, 0.869) 18.5%,
+    hsla(0, 0%, 5%, 0.826) 26.3%,
+    hsla(0, 0%, 5%, 0.771) 33.3%,
+    hsla(0, 0%, 5%, 0.706) 39.7%,
+    hsla(0, 0%, 5%, 0.634) 45.6%,
+    hsla(0, 0%, 5%, 0.557) 51.1%,
+    hsla(0, 0%, 5%, 0.476) 56.4%,
+    hsla(0, 0%, 5%, 0.394) 61.6%,
+    hsla(0, 0%, 5%, 0.313) 67%,
+    hsla(0, 0%, 5%, 0.235) 72.5%,
+    hsla(0, 0%, 5%, 0.163) 78.5%,
+    hsla(0, 0%, 5%, 0.098) 84.9%,
+    hsla(0, 0%, 5%, 0.043) 92.1%,
+    hsla(0, 0%, 5%, 0) 100%
+  ); 
+}
+
+/* ERROR 404 */
+#error-bg{
+  background-image: url(../vector/vector5/Error\ Trash.svg);
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  z-index: 120;
+}
+/* .error-text{
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, 
+  rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, 
+  rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, 
+  rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, 
+  rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, 
+  rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, 
+  rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+} */
+.error-card{
+  background-color: #031117c5;
+  min-height: 40vh !important;
+  max-height: 40vh !important;
+}

@@ -34,7 +34,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 } 
 
-//formulario de contacto
+/* //formulario de contacto
 
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
@@ -102,4 +102,4 @@ function saveMessage(name, email, message){
     email: email,
     message: message
   });
-}
+} */

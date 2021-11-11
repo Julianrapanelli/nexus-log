@@ -1,6 +1,7 @@
 {
   "projects": {
-    "nexus logistic solutions": "nexus-logistic-solutions"
+    "nexus logistic solutions": "nexus-logistic-solutions",
+    "default": "nexus-logistic-solutions"
   },
   "targets": {}
 }

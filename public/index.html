@@ -46,7 +46,7 @@
     </div>
   </nav>
 
-  <!-- Hero mobile-->
+  <!-- Hero-->
   <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container animated">
@@ -262,24 +262,25 @@
     <div class="container columns is-flex is-justify-content-left">
       <div class="column is-half has-text-centered">
         <h2 class="title is-2">Contact Us</h2>
-        <form id="contactForm">
+        <form action="https://formsubmit.co/03ab9469f96dce0ec82f50f0c87fdaee" method="POST">
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Name" required id="name">
+              <input class="input" type="text" placeholder="Name" required name="name">
             </div>
           </div>
 
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input class="input" type="email" placeholder="Email" value="hello@" required id="email">
+              <input class="input" type="email" placeholder="Email" value="hello@" required name="email">
             </div>
-
+            <input type="hidden" name="_subject" value="New email!">
+            <input type="hidden" name="_next" value="https://nexuslog.com.ar/pages/thanks.html">
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Message" required id="message"></textarea>
+                <textarea class="textarea" placeholder="Message" required name="message"></textarea>
               </div>
             </div>
 
@@ -303,8 +304,6 @@
   </footer>
   </section>
   
-  <!-- firebase -->
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 
 <script src="main.js"></script>
 
